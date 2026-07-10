@@ -13,6 +13,7 @@
 
 img {
     width: 100%;
+    display: block;
 }
 
 ul {
@@ -46,13 +47,16 @@ a {
 .button:hover {
     transform: translateY(-2px);
 }
-.big-button{
+
+.big-button {
     font-size: 1.5rem;
 }
 
 
 /* nav- section */
 .header {
+    position: fixed;
+    top: 0;
     background-color: rgb(255, 255, 255);
     width: 100%;
     height: auto;
@@ -106,23 +110,77 @@ a {
     flex-direction: column;
     text-align: center;
     color: #fff;
+    margin-bottom: 100px;
 }
 
-.hero-contant{
+.hero-contant {
     width: 60%;
     margin: auto;
     margin-top: 100px;
-    
+
 }
-.hero-title{
+
+.hero-title {
     font-weight: bolder;
     font-size: 4rem;
     margin-bottom: 20px;
     color: #fff;
 }
-.hero-dis{
+
+.hero-dis {
     font-size: 1.3rem;
     color: #fff;
     margin-bottom: 40%;
 }
 
+/* Speaker section */
+.speaker-title {
+    text-align: center;
+    color: var(--primary-color);
+    font-weight: bolder;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+.speaker-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.speaker-card {
+    min-width: 121px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, .12);
+    padding: 20px;
+    border-radius: 10px;
+    transition: .4s;
+}
+
+.speaker-card:hover {
+    transform: translateY(-3px);
+}
+
+.speaker-card img {
+    margin-bottom: 10px;
+    /* height: 250px; */
+    object-fit: cover;
+
+}
+
+.speaker-category {
+    font-size: .7rem;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+    margin-bottom: 4px;
+}
+
+.speaker-name {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.speaker-company {
+    font-size: 0.7rem;
+    column-rule: #575757;
+}
