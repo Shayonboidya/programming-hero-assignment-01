@@ -8,6 +8,7 @@
 :root {
     --primary-color: #0D1B2A;
     --secondary-color: #1D4ED8;
+    --hover-color: #fd6e0a;
 }
 
 img {
@@ -20,4 +21,73 @@ ul {
 
 a {
     text-decoration: none;
+}
+
+/* universal selector */
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+.button{
+    padding: 12px 12px;
+    background-color: #1D4ED8;
+    color: #fff;
+    border: none;
+    font: 1rem;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s;
+}
+.button:hover{
+    transform: translateY(-2px);
+}
+
+
+/* nav- section */
+.header {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: auto;
+    padding: 2px 20px;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    transition: .4s;
+}
+.nav-bar:hover{
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .12);
+
+}
+.logo img{
+    height: 40px;
+}
+.nav-manu {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.nav-manu a {
+    color: #575757;
+    font-size: 1rem;
+    transition: .3s;
+}
+.nav-manu a:hover{
+    color: #fd6e0a;
+}
+
+/* hero section */
+.hero{
+    background-image: url("./assets/banner.jpg");
+    height: 100vh;
 }
