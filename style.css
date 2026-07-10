@@ -31,7 +31,7 @@ a {
 
 }
 
-.button{
+.button {
     padding: 12px 12px;
     background-color: #1D4ED8;
     color: #fff;
@@ -42,8 +42,12 @@ a {
     cursor: pointer;
     transition: .4s;
 }
-.button:hover{
+
+.button:hover {
     transform: translateY(-2px);
+}
+.big-button{
+    font-size: 1.5rem;
 }
 
 
@@ -64,13 +68,16 @@ a {
     border-radius: 10px;
     transition: .4s;
 }
-.nav-bar:hover{
+
+.nav-bar:hover {
     box-shadow: 1px 1px 3px rgba(0, 0, 0, .12);
 
 }
-.logo img{
+
+.logo img {
     height: 40px;
 }
+
 .nav-manu {
     display: flex;
     gap: 20px;
@@ -82,12 +89,40 @@ a {
     font-size: 1rem;
     transition: .3s;
 }
-.nav-manu a:hover{
+
+.nav-manu a:hover {
     color: #fd6e0a;
 }
 
 /* hero section */
-.hero{
-    background-image: url("./assets/banner.jpg");
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/banner.jpg");
     height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
 }
+
+.hero-contant{
+    width: 60%;
+    margin: auto;
+    margin-top: 100px;
+    
+}
+.hero-title{
+    font-weight: bolder;
+    font-size: 4rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
+.hero-dis{
+    font-size: 1.3rem;
+    color: #fff;
+    margin-bottom: 40%;
+}
+
