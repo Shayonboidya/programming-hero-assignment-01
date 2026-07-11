@@ -184,7 +184,7 @@ a {
 
 .speaker-company {
     font-size: 0.7rem;
-    column-rule: #575757;
+    color: #575757;
 }
 
 /* secure section */
@@ -253,7 +253,7 @@ a {
 }
 
 .sequre-card-price {
-    column-rule: var(--primary-color);
+    color: var(--primary-color);
     font-size: 3rem;
     font-weight: bolder;
     margin-bottom: 4px;
