@@ -94,6 +94,8 @@ a {
 
 .nav-manu a:hover {
     color: #fd6e0a;
+    box-shadow: 0 18px 35px rgba(37, 99, 235, 0.12);
+
 }
 
 /* hero section */
@@ -133,7 +135,7 @@ a {
 
 /* Speaker section */
 .speaker {
-    margin-bottom: 120px;
+    margin-bottom: 100px;
 }
 
 .speaker-title {
@@ -160,6 +162,8 @@ a {
 
 .speaker-card:hover {
     transform: translateY(-3px);
+    box-shadow: 0 18px 35px rgba(37, 99, 235, 0.12);
+
 }
 
 .speaker-card img {
@@ -194,6 +198,7 @@ a {
     font-weight: bolder;
     font-size: 2.5rem;
     margin-bottom: 10px;
+    margin-top: 120px;
 }
 
 .sequre-subtitle {
@@ -226,6 +231,8 @@ a {
 
 .sequre-card:hover {
     transform: translateY(-3px);
+    box-shadow: 0 18px 35px rgba(37, 99, 235, 0.12);
+
 }
 
 .sequre-card-title {
@@ -317,6 +324,8 @@ hr {
     transform: translateY(-3px);
     color: #e5e5e5;
     background-color: var(--secondary-color);
+    box-shadow: 0 18px 35px rgba(37, 99, 235, 0.12);
+
 }
 
 .sequre-card-button-pro {
@@ -328,14 +337,156 @@ hr {
 .sequre-card-button-pro:hover {
     background-color: transparent;
     border: 2px solid #ffffff;
+    box-shadow: 0 18px 35px rgba(37, 99, 235, 0.12);
+
 
 }
 
 /* missing section */
+.schedule-section {
+    background: #ffffff;
+    padding: 100px 20px;
+}
+
+.section-header {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 70px;
+}
+
+.section-tag {
+    display: inline-block;
+    color: #2563eb;
+    background: #eaf2ff;
+    padding: 8px 18px;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+
+.section-header h2 {
+    font-size: 3rem;
+    color: #1e293b;
+    margin-bottom: 18px;
+}
+
+.section-header p {
+    color: #64748b;
+    line-height: 1.8;
+    font-size: 1rem;
+}
+
+
+.schedule-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.schedule-day {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 30px;
+    box-shadow: 0 12px 35px rgba(15, 23, 42, 0.08);
+    border: 1px solid #edf2f7;
+}
+
+.day-header {
+    margin-bottom: 35px;
+}
+
+.day-header h3 {
+    font-size: 1.5rem;
+    color: #1e40af;
+    margin-bottom: 8px;
+}
+
+.day-header span {
+    color: #64748b;
+    font-size: 1rem;
+}
+
+.schedule-list {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.schedule-list::before {
+    content: "";
+    position: absolute;
+    left: 22px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #dbeafe;
+}
+.schedule-card {
+    position: relative;
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 20px;
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 20px 22px 20px 50px;
+    border: 1px solid #edf2f7;
+    transition: 0.35s;
+}
+.schedule-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 35px rgba(37, 99, 235, 0.12);
+}
 
 
 
+.schedule-time {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    color: #2563eb;
+    font-size: 15px;
+}
 
+.schedule-content h4 {
+    font-size: 20px;
+    color: #1e293b;
+    margin: 14px 0 10px;
+}
+
+.schedule-content p {
+    color: #64748b;
+    font-size: 15px;
+}
+.session-type {
+    display: inline-block;
+    padding: 6px 14px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.keynote {
+    background: #dbeafe;
+    color: #1d4ed8;
+}
+
+.workshop {
+    background: #dcfce7;
+    color: #15803d;
+}
+
+.panel {
+    background: #ede9fe;
+    color: #6d28d9;
+}
+
+.session {
+    background: #fff7d6;
+    color: #b45309;
+}
+/* <div class="timeline-dot"></div> */
 
 /* footer section */
 .footer-section {
