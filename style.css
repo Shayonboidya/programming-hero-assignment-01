@@ -89,10 +89,12 @@ a {
 .nav-manu a {
     color: #575757;
     font-size: 1rem;
+    border-radius: 20px;
     transition: .3s;
 }
 
 .nav-manu a:hover {
+    padding: 8px 12px;
     color: #fd6e0a;
     box-shadow: 0 18px 35px rgba(37, 99, 235, 0.12);
 
